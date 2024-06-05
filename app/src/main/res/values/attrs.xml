@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="tm">
+        <attr name="backConsulta" format="color"/>
+        <attr name="topoConsulta" format="color"/>
+        <attr name="textoConsulta" format="color"/>
+    </declare-styleable>
+</resources>

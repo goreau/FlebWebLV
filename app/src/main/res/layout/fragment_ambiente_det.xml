@@ -1,0 +1,425 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sucen.flebweblv.AmbienteDetFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="?attr/actionBarSize">
+
+
+        <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/ambDetTxOrdem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No Ordem"
+            android:inputType="number"/>
+    </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/ambDetTxNumero_casa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numero Casa"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo Imóvel:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <Spinner
+            android:id="@+id/ambDetSpTipoImovel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Situação:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <RadioGroup
+            android:id="@+id/ambDetRgSituacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/ambDetRbTrab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="Trab." />
+
+            <RadioButton
+                android:id="@+id/ambDetRbFech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="Fech" />
+
+            <RadioButton
+                android:id="@+id/ambDetRbRec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="Recusa" />
+
+            <RadioButton
+                android:id="@+id/ambDetRbDesab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="Desab" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/layAmbienteSituacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pavimentação:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <Spinner
+            android:id="@+id/ambDetSpPavimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView62"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:paddingTop="10dp"
+                    android:text="Ext.Orgânico:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <util.CustomCheck
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:id="@+id/ambDetCcExtrato" />
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:paddingTop="10dp"
+                    android:text="Pres.Animais:" />
+
+                <util.CustomCheck
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:id="@+id/ambDetCcAnimal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="4"
+                    android:text="Pessoas/Animais:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ambDetTxHumano"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Humano"
+                        android:inputType="number"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ambDetTxCao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Cão"
+                        android:inputType="number"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </TableRow>
+            <TableRow
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ambDetTxGato"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Gato"
+                        android:inputType="number"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ambDetTxAves"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Aves"
+                        android:inputType="number"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </TableRow>
+            <TableRow
+                android:paddingLeft="10dp"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ambDetTxOutros"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Outros"
+                        android:inputType="number"/>
+                </android.support.design.widget.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView70"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="4"
+                    android:text="Ação Educativa/Manejo Ambiental:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:paddingTop="10dp"
+                    android:text="Orientação:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <util.CustomCheck
+                    android:id="@+id/ambDetCcOrientacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    android:id="@+id/textView72"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:paddingTop="10dp"
+                    android:text="Poda:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <util.CustomCheck
+                    android:id="@+id/ambDetCcPoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textView73"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:paddingTop="10dp"
+                    android:text="Capina:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <util.CustomCheck
+                    android:id="@+id/ambDetCcCapina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    android:id="@+id/textView74"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:paddingTop="10dp"
+                    android:text="Recolhimento:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <util.CustomCheck
+                    android:id="@+id/ambDetCcRecolhimento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView75"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="4"
+                    android:text="Protocolo Vigilância Sanitária:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textView78"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:paddingTop="10dp"
+                    android:text="Aplicação:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <util.CustomCheck
+                    android:id="@+id/ambDetCcProtocolo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    android:id="@+id/textView79"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:paddingTop="10dp"
+                    android:text="Retorno:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <util.CustomCheck
+                    android:id="@+id/ambDetCcRetorno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+            </TableRow>
+        </TableLayout>
+        </LinearLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/ambDetTxLatitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/ambDetTxLongitude"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:inputType="numberDecimal" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btSalvaAmb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/novo"
+            android:paddingRight="60sp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/salva"
+            android:textSize="@dimen/font_size" />
+
+        <Button
+            android:id="@+id/btVoltaAmb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:drawableRight="@drawable/voltar"
+            android:paddingRight="60sp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/volta"
+            android:textSize="@dimen/font_size" />
+    </LinearLayout>
+</ScrollView>

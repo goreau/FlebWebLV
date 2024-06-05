@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4de255</color>
+    <color name="colorPrimaryDark">#278032</color>
+    <color name="colorTexto2">#04273b</color>
+    <color name="colorTexto1">#ffffff</color>
+    <color name="colorAccent">#313cd9</color>
+    <color name="consulta">#e4fbe4</color>
+    <color name="consultaNight">#5E7472</color>
+    <color name="colorTexto1Night">#E4E9E3</color>
+    <color name="colorPrimNight">#4de255</color>
+    <color name="colorPrimDarkNight">#B7E6B5</color>
+    <color name="colorAccNight">#00BCD4</color>
+</resources>

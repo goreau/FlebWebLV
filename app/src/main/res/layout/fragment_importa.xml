@@ -1,0 +1,100 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.sucen.flebweblv.ImportaFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingTop="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/tvConecta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/vermelho"
+            android:text="@string/tvConecta"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/tvImporta"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <RadioGroup
+            android:id="@+id/rgImporta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbCadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="10dp"
+                android:text="@string/tvCadastro" />
+
+            <RadioButton
+                android:id="@+id/rbSistema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="10dp"
+                android:text="@string/tvSistema" />
+        </RadioGroup>
+        <LinearLayout
+            android:id="@+id/layCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <Switch
+                android:id="@+id/swJunta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="20dp"
+                android:text="Acumular" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvLocal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <AutoCompleteTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/etLocal" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btImporta"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:drawableRight="@drawable/proc_import"
+            android:paddingTop="20dp"
+            android:paddingRight="60dp"
+            android:paddingBottom="20dp"
+            android:text="@string/tvBotao"
+            android:textSize="@dimen/font_size" />
+
+        <TextView
+            android:id="@+id/tvResumo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/tvResumo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="@dimen/font_size" />
+    </LinearLayout>
+</ScrollView>

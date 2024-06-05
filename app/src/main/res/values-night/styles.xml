@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimNight</item>
+        <item name="colorPrimaryDark">@color/colorPrimDarkNight</item>
+        <item name="colorAccent">@color/colorAccNight</item>
+        <item name="panelBackground">@color/colorTexto1Night</item>
+        <item name="backConsulta">@color/consultaNight</item>
+        <item name="topoConsulta">@color/colorPrimaryDark</item>
+        <item name="textoConsulta">#FFFFFF</item>
+        <item name="editTextColor">@color/colorTexto1</item>
+    </style>
+
+    <style name="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.AppCompat.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.AppCompat.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+
+</resources>

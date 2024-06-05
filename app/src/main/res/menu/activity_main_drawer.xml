@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ambiente"
+            android:icon="@drawable/ic_ambiente"
+            android:title="Manejo Ambiental" />
+        <item
+            android:id="@+id/nav_captura"
+            android:icon="@drawable/ic_captura"
+            android:title="Captura" />
+        <item
+            android:id="@+id/nav_inquerito"
+            android:icon="@drawable/ic_inquerito"
+            android:title="Inquérito Canino" />
+        <item
+            android:id="@+id/nav_tratamento"
+            android:icon="@drawable/ic_tratamento"
+            android:title="Tratamento" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Manutenção" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_importa"
+                android:icon="@drawable/ic_importa"
+                android:title="Importar Cadastros" />
+            <item
+                android:id="@+id/nav_sincro"
+                android:icon="@drawable/ic_sync"
+                android:title="Exportar Produção" />
+        </menu>
+    </item>
+
+</menu>

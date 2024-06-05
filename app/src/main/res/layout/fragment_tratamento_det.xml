@@ -1,0 +1,261 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    tools:context="com.sucen.flebweblv.TratamentoFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="?attr/actionBarSize">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tratTxtOrdem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ordem"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:text="@string/tvSituacao"
+            android:id="@+id/textView2" />
+        <RadioGroup
+            android:id="@+id/tratRgSituacao"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="@string/rbTrab"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:id="@+id/tratRbTrabalhado" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="@string/rbFech"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:id="@+id/tratRbFechado" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="@string/rbRec"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:id="@+id/tratRbRecusa" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="@string/rbDesab"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:id="@+id/tratRbDesabitado" />
+        </RadioGroup>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layTratSituacao">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvIntra"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/textView3"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/trabTxtExistentes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txExist"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/trabTxtBorrifados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txBorrif"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvNaoBorrif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:id="@+id/textView9"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/trabTxtAcabamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txAcab"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/trabTxtRecusa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txRecusa"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/trabTxtOutros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txOutros"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvPAbrigo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tratTxtAbrigoExist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txExist"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tratTxtAbrigoBorrif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txBorrif"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvPParedes"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/textView15"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tratTxtParedeExist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txExist"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tratTxtParedeBorrif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txBorrif"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/tvTratamento"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tratTxtInseticida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txInseticida"
+                android:inputType="numberDecimal"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tratTxtEspalhante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txEspalhante"
+                android:inputType="numberDecimal"/>
+        </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/novo"
+            android:textSize="@dimen/font_size"
+            android:paddingRight="60dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/salva"
+            android:id="@+id/btSalvaTrat" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/voltar"
+            android:textSize="@dimen/font_size"
+            android:paddingRight="60dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/volta"
+            android:id="@+id/btVoltaTrat" />
+
+    </LinearLayout>
+</ScrollView>

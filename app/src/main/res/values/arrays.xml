@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="temas">
+        <item>Normal</item>
+        <item>Escuro</item>
+    </array>
+</resources>
